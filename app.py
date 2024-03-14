@@ -30,8 +30,8 @@ def account():
 
     return jsonify({"code": "200"})
 
-@app.route("/chndtr", methods=["GET"])
-def chndtr():
+@app.route("/data", methods=["GET"])
+def data():
     conn = sqlite3.connect("DATA.db")
     db = conn.cursor()
 
